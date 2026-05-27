@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "NHK",
-  url: "https://charadex-team.github.io/charadex-v1.0/",
+  url: "https://froallo.github.io/NHK/",
   description: `NHK`
 }
 
