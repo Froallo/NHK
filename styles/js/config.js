@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1GwgfLizD3HQCieGia6di-TfU4E3EipT9Jb0BDZQwNak",
+  id: "1IxhN4QJ7wxhwepb8xA6nnuUmYNTD6bwZAxrDQ2uL_lg",
 
   pages: {
     masterlist:    "masterlist",
@@ -42,10 +42,10 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
-    statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-    species: ['All', 'Dog', 'Cat', 'Bunny'],
+    sex: ['All', 'Male', 'Female'],
+    lineage: ['All', 'Import', 'Pedigree'],
+    rarity: ['All', '1', '2',],
+    breed: ['All', 'Akita', 'Hokkaido', 'Kai', 'Kishu', 'Shiba', 'Shikoku'],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
 
@@ -328,16 +328,16 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': charadex.sheet.options.designTypes,
-      'Status': charadex.sheet.options.statuses,
+      'Design Type': charadex.sheet.options.sex,
+      'Status': charadex.sheet.options.lineage,
       'Rarity': charadex.sheet.options.rarity,
     }
   },
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Species',
-    parameters: charadex.sheet.options.species,
+    folderProperty: 'breed',
+    parameters: charadex.sheet.options.breed,
   },
 
   search: {
